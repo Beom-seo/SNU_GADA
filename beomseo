@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팀 소개 - 개발과 협력의 국제정치경제</title>
+    <style>
+        /* 기본 설정 */
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #F5F7FA;
+            --text-main: #333333;
+            --text-muted: #666666;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* 헤더 (팀 이름 및 한줄소개) */
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--primary-color);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            word-break: keep-all;
+        }
+
+        /* 팀원 소개 (그리드 레이아웃) */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .member-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .member-role {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+            background: #EAF2FB;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+        }
+
+        .member-topic {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            word-break: keep-all;
+        }
+
+        /* 산출물 문단 */
+        .vision-section {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .vision-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .vision-section p {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            word-break: keep-all;
+        }
+
+        /* 모바일 반응형 처리 */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            header p { font-size: 1rem; }
+            .team-grid { grid-template-columns: 1fr 1fr; }
+            .vision-section { padding: 1.5rem; }
+        }
+
+        @media (max-width: 400px) {
+            .team-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>팀 에코폴 (EcoPol)</h1>
+            <p>지속가능한 발전과 포용적 성장을 고민하는 학생들의 모임입니다.</p>
+        </header>
+
+        <div class="team-grid">
+            <div class="member-card">
+                <div class="member-name">정범서</div>
+                <div class="member-role">관심 주제</div>
+                <div class="member-topic">거시경제적 관점의 국제무역정책 및 메커니즘 디자인</div>
+            </div>
+            
+            <div class="member-card">
+                <div class="member-name">김지윤</div>
+                <div class="member-role">관심 주제</div>
+                <div class="member-topic">공적개발원조(ODA) 효과성 평가와 글로벌 빈곤 퇴치</div>
+            </div>
+            
+            <div class="member-card">
+                <div class="member-name">박민수</div>
+                <div class="member-role">관심 주제</div>
+                <div class="member-topic">국제기구의 거버넌스와 로컬 NGO 간의 협력 모델</div>
+            </div>
+            
+            <div class="member-card">
+                <div class="member-name">이서현</div>
+                <div class="member-role">관심 주제</div>
+                <div class="member-topic">기후변화 대응과 개발도상국의 환경적 지속가능성</div>
+            </div>
+        </div>
+
+        <div class="vision-section">
+            <h2>우리가 만들고 싶은 개발협력 산출물</h2>
+            <p>
+                우리는 단순한 경제적 원조를 넘어, 수원국의 자생적 경제 성장을 돕는 제도적 기반 마련에 기여하고 싶습니다. 거시경제적 안정성과 국제무역 구조, 그리고 현지의 정치적 맥락을 종합적으로 고려하여, 개발도상국이 국제 사회의 동등한 파트너로 성장할 수 있도록 돕는 <strong>'맞춤형 무역 역량 및 제도 강화 프로그램'</strong>의 기초 기획안을 도출하는 것이 이번 학기의 최종 목표입니다.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
